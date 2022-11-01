@@ -1,11 +1,8 @@
 import React from "react";
-import "./Busqueda.css";
+import "./lista.css";
 
 
 function Busqueda(props){
-
-    let [ValorBusqueda,setValorBusqueda]=React.useState("");
-
 
     function actutext(event)
     {
@@ -13,10 +10,8 @@ function Busqueda(props){
         props.setValorBusqueda(event.target.value);
     }
     return(
-        <div className="contenedor">
+        <div className="inp">
             <input onChange={actutext}></input>
-            <button>dale click</button>
-            <h2>{props.ValorBusqueda}</h2>
         </div>
     );
 }
