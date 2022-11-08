@@ -4,8 +4,7 @@ function Lista(props){
 
     return(
         <React.Fragment>
-        <h1>Mi lista</h1>
-        {props.children}
+            {props.children}
         </React.Fragment>
     );
 
